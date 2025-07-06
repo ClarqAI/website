@@ -41,7 +41,7 @@ function App() {
   };
 
   const openCalendly = () => {
-    const calendlyUrl = 'https://calendly.com/nagpal-aaditya/30min';
+    const calendlyUrl = 'https://calendly.com/clarqai/30min';
     window.open(calendlyUrl, '_blank');
   };
 
@@ -70,7 +70,7 @@ function App() {
     setFormState('loading');
 
     try {
-      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+      const response = await fetch('https://formspree.io/f/mldnkagw', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -132,7 +132,7 @@ function App() {
         <div className="nav-container">
           <div className="nav-content">
             <div className="logo">
-              <span className="logo-text">ClarqAI</span>
+              <span className="logo-text">CLARQ</span>
             </div>
             <div className="nav-links">
               <a href="#home" className="nav-link">Home</a>
@@ -153,15 +153,14 @@ function App() {
               </div>
 
               <h1 className="hero-title">
-                <span className="title-line">We quantify</span>
-                <span className="title-gradient">climate risk</span>
+                <span className="title-gradient">Transfer climate-related risks</span>
+                <span className="title-line">to capital markets</span>
               </h1>
 
               <div className="hero-description">
-                <p className="description-main">Over 90% global insurable risk remains uninsured</p>
-                <p className="description-sub">Parametric insurance in the age of AI</p>
+                <p className="description-main">Over 90% of global insurable risk remains uninsured</p>
                 <p className="description-detail">
-                  We provide services related to Parametric insurances for events which are affected by the climatic changes
+                  Our PhDs and business experts craft state-of-the-art parametric models to quantify climate-related risks and enable risk transfer
                 </p>
               </div>
 
@@ -179,9 +178,9 @@ function App() {
                   <div className="card-icon-container">
                     <Shield className="card-icon" />
                   </div>
-                  <h3 className="card-title">AI Risk Assessment</h3>
+                  <h3 className="card-title">AI-based Risk Quantification</h3>
                   <p className="card-description">
-                    Advanced algorithms analyze climate data with unprecedented accuracy
+                    Advanced algorithms analyze state-of-the-art climate data
                   </p>
                 </div>
                 <div className="card-divider"></div>
@@ -194,7 +193,7 @@ function App() {
                   </div>
                   <h3 className="card-title">Parametric Solutions</h3>
                   <p className="card-description">
-                    Automated insurance with instant payouts
+                    Accurate triggers with automated payouts
                   </p>
                 </div>
                 <div className="card-divider"></div>
@@ -223,7 +222,7 @@ function App() {
               Transforming <span className="text-purple">risk management</span>
             </h2>
             <p className="features-description">
-              Advanced AI-powered solutions for the next generation of parametric insurance
+              Advanced AI-powered solutions for the next wave of parametric risk transfer
             </p>
           </div>
 
@@ -231,9 +230,9 @@ function App() {
             <div className="feature-card">
               <div className="feature-content">
                 <TrendingUp className="feature-icon" />
-                <h3 className="feature-title">Real-Time Analytics</h3>
+                <h3 className="feature-title">Continuous Data Assimilation</h3>
                 <p className="feature-description">
-                  Monitor climate events and risk factors with advanced real-time data processing and predictive modeling.
+                  Monitor climate events and risk factors with advanced real-time data processing and predictive modeling
                 </p>
               </div>
             </div>
@@ -243,7 +242,7 @@ function App() {
                 <Globe className="feature-icon" />
                 <h3 className="feature-title">Global Coverage</h3>
                 <p className="feature-description">
-                  Comprehensive parametric insurance solutions covering climate risks across all global regions and markets.
+                  Comprehensive parametric solutions covering climate risks across all global regions and markets
                 </p>
               </div>
             </div>
@@ -260,10 +259,10 @@ function App() {
               <span className="badge-text">Get In Touch</span>
             </div>
             <h2 className="contact-title">
-              Ready to <span className="text-purple">transform</span> risk?
+              Ready to <span className="text-purple">transform</span> risk transfer?
             </h2>
             <p className="contact-description">
-              Get in touch to join the Parametric Insurance Revolution
+              Get in touch to join the future of parametric risk transfer
             </p>
           </div>
 
@@ -349,7 +348,7 @@ function App() {
                       value={formData.message}
                       onChange={(e) => handleInputChange('message', e.target.value)}
                       className={`form-textarea ${errors.message ? 'error' : ''}`}
-                      placeholder="Tell us about your parametric insurance needs..."
+                      placeholder="Tell us about your parametric modeling needs ..."
                       disabled={formState === 'loading'}
                     />
                     {errors.message && <p className="error-text">{errors.message}</p>}
@@ -386,7 +385,7 @@ function App() {
                         <p className="info-value">contact@clarqai.com</p>
                       </div>
                     </div>
-                    <div className="info-item">
+                    {/* <div className="info-item">
                       <div className="info-icon-container">
                         <Phone className="info-icon" />
                       </div>
@@ -394,16 +393,15 @@ function App() {
                         <h4 className="info-label">Phone</h4>
                         <p className="info-value">+1 (555) 123-4567</p>
                       </div>
-                    </div>
+                    </div> */}
                     <div className="info-item">
                       <div className="info-icon-container">
                         <MapPin className="info-icon" />
                       </div>
                       <div>
-                        <h4 className="info-label">Address</h4>
+                        <h4 className="info-label">Headquarter</h4>
                         <p className="info-value">
-                          123 Innovation Drive<br />
-                          Tech Hub, CA 94105<br />
+                          Gainesville, FL 32606<br />
                           United States
                         </p>
                       </div>
@@ -419,7 +417,7 @@ function App() {
                   </div>
                   <h3 className="demo-title">Schedule a Demo</h3>
                   <p className="demo-description">
-                    See how our AI-powered parametric insurance solutions can transform your risk management strategy.
+                    Let's chat about how parametric solutions can transform your climate risk strategy
                   </p>
                   <button onClick={openCalendly} className="demo-button">
                     Book a Call
@@ -436,11 +434,11 @@ function App() {
         <div className="footer-container">
           <div className="footer-content">
             <div className="footer-logo">
-              <span className="logo-text">ClarqAI</span>
+              <span className="logo-text">CLARQ</span>
             </div>
             <p className="footer-text">
-              © 2025 ClarqAI. All rights reserved.<br />
-              Climate-Adaptive Risk Quantification.
+              © Clarq LLC 2025  <br />
+              All rights reserved
             </p>
           </div>
         </div>
